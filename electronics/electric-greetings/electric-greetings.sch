@@ -63,19 +63,19 @@ $EndComp
 $Comp
 L appli_capacitor:1u_X5R_1005M C?
 U 1 1 5B6352DC
-P 3700 4100
-F 0 "C?" H 3778 4035 50  0000 L CNN
-F 1 "1u_X5R_1005M" H 3778 3955 35  0000 L CNN
-F 2 "Applidyne_Capacitor:CAPC1005X60N" V 3815 4000 20  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2291921.pdf" V 3840 4000 20  0001 C CNN
-F 4 "TDK" V 3890 4000 20  0001 C CNN "manf"
-F 5 "C1005X5R1V105K050BC" V 3915 4000 20  0001 C CNN "manf#"
-F 6 "Element14" V 3940 4000 20  0001 C CNN "Supplier"
-F 7 "2346885" V 3965 4000 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/tdk/c1005x5r1v105k050bc/cap-mlcc-x5r-1uf-35v-0402/dp/2346885" V 3990 4000 20  0001 C CNN "Supplier URL"
-F 9 "0.101" V 4015 4000 20  0001 C CNN "Supplier Price"
-F 10 "100" V 4040 4000 20  0001 C CNN "Supplier Price Break"
-	1    3700 4100
+P 4050 4050
+F 0 "C?" H 4128 3985 50  0000 L CNN
+F 1 "1u_X5R_1005M" H 4128 3905 35  0000 L CNN
+F 2 "Applidyne_Capacitor:CAPC1005X60N" V 4165 3950 20  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2291921.pdf" V 4190 3950 20  0001 C CNN
+F 4 "TDK" V 4240 3950 20  0001 C CNN "manf"
+F 5 "C1005X5R1V105K050BC" V 4265 3950 20  0001 C CNN "manf#"
+F 6 "Element14" V 4290 3950 20  0001 C CNN "Supplier"
+F 7 "2346885" V 4315 3950 20  0001 C CNN "Supplier Part No"
+F 8 "http://au.element14.com/tdk/c1005x5r1v105k050bc/cap-mlcc-x5r-1uf-35v-0402/dp/2346885" V 4340 3950 20  0001 C CNN "Supplier URL"
+F 9 "0.101" V 4365 3950 20  0001 C CNN "Supplier Price"
+F 10 "100" V 4390 3950 20  0001 C CNN "Supplier Price Break"
+	1    4050 4050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -189,19 +189,19 @@ Wire Wire Line
 $Comp
 L appli_capacitor:1u_X5R_1005M C?
 U 1 1 5B636861
-P 3550 3200
-F 0 "C?" H 3628 3135 50  0000 L CNN
-F 1 "1u_X5R_1005M" H 3628 3055 35  0000 L CNN
-F 2 "Applidyne_Capacitor:CAPC1005X60N" V 3665 3100 20  0001 C CNN
-F 3 "http://www.farnell.com/datasheets/2291921.pdf" V 3690 3100 20  0001 C CNN
-F 4 "TDK" V 3740 3100 20  0001 C CNN "manf"
-F 5 "C1005X5R1V105K050BC" V 3765 3100 20  0001 C CNN "manf#"
-F 6 "Element14" V 3790 3100 20  0001 C CNN "Supplier"
-F 7 "2346885" V 3815 3100 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/tdk/c1005x5r1v105k050bc/cap-mlcc-x5r-1uf-35v-0402/dp/2346885" V 3840 3100 20  0001 C CNN "Supplier URL"
-F 9 "0.101" V 3865 3100 20  0001 C CNN "Supplier Price"
-F 10 "100" V 3890 3100 20  0001 C CNN "Supplier Price Break"
-	1    3550 3200
+P 3800 3600
+F 0 "C?" H 3878 3535 50  0000 L CNN
+F 1 "1u_X5R_1005M" H 3878 3455 35  0000 L CNN
+F 2 "Applidyne_Capacitor:CAPC1005X60N" V 3915 3500 20  0001 C CNN
+F 3 "http://www.farnell.com/datasheets/2291921.pdf" V 3940 3500 20  0001 C CNN
+F 4 "TDK" V 3990 3500 20  0001 C CNN "manf"
+F 5 "C1005X5R1V105K050BC" V 4015 3500 20  0001 C CNN "manf#"
+F 6 "Element14" V 4040 3500 20  0001 C CNN "Supplier"
+F 7 "2346885" V 4065 3500 20  0001 C CNN "Supplier Part No"
+F 8 "http://au.element14.com/tdk/c1005x5r1v105k050bc/cap-mlcc-x5r-1uf-35v-0402/dp/2346885" V 4090 3500 20  0001 C CNN "Supplier URL"
+F 9 "0.101" V 4115 3500 20  0001 C CNN "Supplier Price"
+F 10 "100" V 4140 3500 20  0001 C CNN "Supplier Price Break"
+	1    3800 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -276,9 +276,9 @@ F 3 "" H 2200 2200 60  0000 C CNN
 	1    2200 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 6375 4100 2    51   BiDi ~ 0
-USB_D+
-Text GLabel 6375 3975 2    51   BiDi ~ 0
+Text GLabel 6600 5500 2    51   BiDi ~ 0
+USB_D-
+Text GLabel 6600 5600 2    51   BiDi ~ 0
 USB_D+
 $Comp
 L appli_device:APA102-2020 U?
@@ -445,58 +445,58 @@ F 10 "100" V 10935 1600 20  0001 C CNN "Supplier Price Break"
 	1    10600 1750
 	0    1    1    0   
 $EndComp
-Text GLabel 6475 4325 2    59   Output ~ 0
+Text GLabel 4900 5400 0    59   Output ~ 0
 STATUS_LED
-Text GLabel 6350 3450 2    59   Output ~ 0
+Text GLabel 4900 5000 0    59   Output ~ 0
 LED_DATA
-Text GLabel 6375 3600 2    59   Output ~ 0
+Text GLabel 4900 5100 0    59   Output ~ 0
 LED_CLK
-Text GLabel 4100 3850 0    59   Input ~ 0
+Text GLabel 4350 3900 0    59   Input ~ 0
 RESET
 Text GLabel 2575 5150 2    59   Output ~ 0
 RESET
 $Comp
 L appli_power:+3.3V #PWR?
 U 1 1 5B64D3FE
-P 3550 3025
-F 0 "#PWR?" H 3550 2985 30  0001 C CNN
-F 1 "+3.3V" H 3559 3163 30  0000 C CNN
-F 2 "" H 3550 3025 60  0000 C CNN
-F 3 "" H 3550 3025 60  0000 C CNN
-	1    3550 3025
+P 3800 3450
+F 0 "#PWR?" H 3800 3410 30  0001 C CNN
+F 1 "+3.3V" H 3809 3588 30  0000 C CNN
+F 2 "" H 3800 3450 60  0000 C CNN
+F 3 "" H 3800 3450 60  0000 C CNN
+	1    3800 3450
 	1    0    0    -1  
 $EndComp
 $Comp
 L appli_power:GND #PWR?
 U 1 1 5B64D41D
-P 3550 3550
-F 0 "#PWR?" H 3550 3300 50  0001 C CNN
-F 1 "GND" H 3555 3377 50  0000 C CNN
-F 2 "" H 3550 3550 60  0000 C CNN
-F 3 "" H 3550 3550 60  0000 C CNN
-	1    3550 3550
+P 3800 4550
+F 0 "#PWR?" H 3800 4300 50  0001 C CNN
+F 1 "GND" H 3805 4377 50  0000 C CNN
+F 2 "" H 3800 4550 60  0000 C CNN
+F 3 "" H 3800 4550 60  0000 C CNN
+	1    3800 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L appli_power:GND #PWR?
 U 1 1 5B64D43C
-P 3850 5075
-F 0 "#PWR?" H 3850 4825 50  0001 C CNN
-F 1 "GND" H 3855 4902 50  0000 C CNN
-F 2 "" H 3850 5075 60  0000 C CNN
-F 3 "" H 3850 5075 60  0000 C CNN
-	1    3850 5075
+P 4050 4550
+F 0 "#PWR?" H 4050 4300 50  0001 C CNN
+F 1 "GND" H 4055 4377 50  0000 C CNN
+F 2 "" H 4050 4550 60  0000 C CNN
+F 3 "" H 4050 4550 60  0000 C CNN
+	1    4050 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L appli_power:+3.3V #PWR?
 U 1 1 5B64D45B
-P 4125 3575
-F 0 "#PWR?" H 4125 3535 30  0001 C CNN
-F 1 "+3.3V" H 4134 3713 30  0000 C CNN
-F 2 "" H 4125 3575 60  0000 C CNN
-F 3 "" H 4125 3575 60  0000 C CNN
-	1    4125 3575
+P 4400 3450
+F 0 "#PWR?" H 4400 3410 30  0001 C CNN
+F 1 "+3.3V" H 4409 3588 30  0000 C CNN
+F 2 "" H 4400 3450 60  0000 C CNN
+F 3 "" H 4400 3450 60  0000 C CNN
+	1    4400 3450
 	1    0    0    -1  
 $EndComp
 Text Notes 9150 3225 0    79   ~ 16
@@ -515,9 +515,9 @@ Text Notes 8825 3525 0    59   ~ 0
 Used as rough rangefinder,\ncolour sensor or pulse-monitor
 Text GLabel 9400 4300 0    59   Output ~ 0
 PHOTOSENSOR
-Text GLabel 6450 4650 2    59   Input ~ 0
+Text GLabel 7300 3650 2    59   Input ~ 0
 PHOTOSENSOR
-Text Notes 4450 3225 0    79   ~ 16
+Text Notes 5100 3225 0    79   ~ 16
 Atmel ARM M0 Microcontroller
 $Comp
 L appli_power:+3.3V #PWR?
@@ -595,4 +595,131 @@ F 3 "" H 2600 6650 60  0000 C CNN
 $EndComp
 Text Notes 3175 6675 0    59   ~ 0
 USB Symbol
+$Comp
+L appli_atmel:ATSAMD21E18A U?
+U 1 1 5B5FD217
+P 5150 4000
+F 0 "U?" H 4700 4550 50  0000 L CNN
+F 1 "ATSAMD21E18A" H 4850 3450 50  0000 L CNN
+F 2 "Applidyne_QFN:QFN33P50_500X500X100L40X24T345N" H 5150 3300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-Family-Datasheet-DS40001882C.pdf" H 5150 3275 20  0001 C CNN
+F 4 "Atmel" H 5150 3225 20  0001 C CNN "manf"
+F 5 "ATSAMD21E18A-MUT" H 5150 3200 20  0001 C CNN "manf#"
+F 6 "Mouser" H 5150 3175 20  0001 C CNN "Supplier"
+F 7 "556-ATSAMD21E18A-MUT" H 5150 3150 20  0001 C CNN "Supplier Part No"
+F 8 "https://au.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATSAMD21E18A-MUT" H 5150 3125 20  0001 C CNN "Supplier URL"
+F 9 "3.40" H 5150 3100 20  0001 C CNN "Supplier Price"
+F 10 "100" H 5150 3075 20  0001 C CNN "Supplier Price Break"
+	1    5150 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L appli_atmel:ATSAMD21E18A U?
+U 2 1 5B5FD359
+P 6450 4000
+F 0 "U?" H 6750 4550 50  0000 L CNN
+F 1 "ATSAMD21E18A" H 6150 3450 50  0000 L CNN
+F 2 "Applidyne_QFN:QFN33P50_500X500X100L40X24T345N" H 6450 3300 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-Family-Datasheet-DS40001882C.pdf" H 6450 3275 20  0001 C CNN
+F 4 "Atmel" H 6450 3225 20  0001 C CNN "manf"
+F 5 "ATSAMD21E18A-MUT" H 6450 3200 20  0001 C CNN "manf#"
+F 6 "Mouser" H 6450 3175 20  0001 C CNN "Supplier"
+F 7 "556-ATSAMD21E18A-MUT" H 6450 3150 20  0001 C CNN "Supplier Part No"
+F 8 "https://au.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATSAMD21E18A-MUT" H 6450 3125 20  0001 C CNN "Supplier URL"
+F 9 "3.40" H 6450 3100 20  0001 C CNN "Supplier Price"
+F 10 "100" H 6450 3075 20  0001 C CNN "Supplier Price Break"
+	2    6450 4000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L appli_atmel:ATSAMD21E18A U?
+U 3 1 5B5FD41E
+P 5750 5400
+F 0 "U?" H 5350 5950 50  0000 C CNN
+F 1 "ATSAMD21E18A" H 5750 4850 50  0000 C CNN
+F 2 "Applidyne_QFN:QFN33P50_500X500X100L40X24T345N" H 5750 4700 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-Family-Datasheet-DS40001882C.pdf" H 5750 4675 20  0001 C CNN
+F 4 "Atmel" H 5750 4625 20  0001 C CNN "manf"
+F 5 "ATSAMD21E18A-MUT" H 5750 4600 20  0001 C CNN "manf#"
+F 6 "Mouser" H 5750 4575 20  0001 C CNN "Supplier"
+F 7 "556-ATSAMD21E18A-MUT" H 5750 4550 20  0001 C CNN "Supplier Part No"
+F 8 "https://au.mouser.com/ProductDetail/Microchip-Technology-Atmel/ATSAMD21E18A-MUT" H 5750 4525 20  0001 C CNN "Supplier URL"
+F 9 "3.40" H 5750 4500 20  0001 C CNN "Supplier Price"
+F 10 "100" H 5750 4475 20  0001 C CNN "Supplier Price Break"
+	3    5750 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5500 6400 5500
+Wire Wire Line
+	6400 5600 6600 5600
+Wire Wire Line
+	4900 5400 5100 5400
+Wire Wire Line
+	4900 5100 5100 5100
+Wire Wire Line
+	5100 5000 4900 5000
+Wire Wire Line
+	4050 4250 4050 4550
+Wire Wire Line
+	4500 4300 4400 4300
+Wire Wire Line
+	4400 4300 4400 4400
+Wire Wire Line
+	4400 4400 4500 4400
+Wire Wire Line
+	4400 4400 4400 4550
+Connection ~ 4400 4400
+$Comp
+L appli_power:GND #PWR?
+U 1 1 5B607260
+P 4400 4550
+F 0 "#PWR?" H 4400 4300 50  0001 C CNN
+F 1 "GND" H 4405 4377 50  0000 C CNN
+F 2 "" H 4400 4550 60  0000 C CNN
+F 3 "" H 4400 4550 60  0000 C CNN
+	1    4400 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4000 4050 4000
+Wire Wire Line
+	4050 4000 4050 4050
+Wire Wire Line
+	4500 3900 4350 3900
+Wire Wire Line
+	4500 3700 4400 3700
+Wire Wire Line
+	4400 3700 4400 3600
+Wire Wire Line
+	4400 3600 4500 3600
+Wire Wire Line
+	4400 3600 4400 3450
+Connection ~ 4400 3600
+Wire Wire Line
+	3800 3600 3800 3450
+Wire Wire Line
+	3800 3800 3800 4550
+Text GLabel 7300 4300 2    51   BiDi ~ 0
+SWD_CLK
+Text GLabel 7300 4400 2    51   BiDi ~ 0
+SWD_IO
+Wire Wire Line
+	7300 4300 7100 4300
+Wire Wire Line
+	7100 4400 7300 4400
+Text Notes 5000 3400 0    50   ~ 0
+Power
+Text Notes 6350 3400 0    50   ~ 0
+Analog (mostly)
+Text Notes 5650 4800 0    50   ~ 0
+Digital
+Text Notes 7150 5600 0    50   ~ 0
+Chip has internal series resistors and \ninternal tranciever pull-resistors
+Text GLabel 7300 3800 2    59   Input ~ 0
+CURRENT
+Text GLabel 3300 2500 2    59   Input ~ 0
+CURRENT
+Text Notes 9500 6150 0    50   ~ 0
+Relevant features:\n- Internal 128-bit serial number.\n- Internal temperature sensor.
 $EndSCHEMATC
