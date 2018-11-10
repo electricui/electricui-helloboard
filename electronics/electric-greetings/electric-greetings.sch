@@ -419,7 +419,7 @@ Wire Wire Line
 Text Notes 1375 2975 0    79   ~ 16
 SWD Programming
 Text Notes 1525 4225 0    79   ~ 16
-Reset Button
+Reset & User Button
 Text Notes 9950 1150 0    79   ~ 16
 Status LED
 Text Notes 9600 1450 0    59   ~ 0
@@ -454,7 +454,7 @@ Text GLabel 4900 5100 0    59   Output ~ 0
 LED_CLK
 Text GLabel 4350 3900 0    59   Input ~ 0
 RESET
-Text GLabel 2525 4700 2    59   Output ~ 0
+Text GLabel 2225 4700 2    59   Output ~ 0
 RESET
 $Comp
 L appli_power:+3.3V #PWR03
@@ -709,7 +709,7 @@ F 3 "" H 1075 5375 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 4700 2525 4700
+	1750 4700 2225 4700
 $Comp
 L appli_transistor:ALS-PT19-315C Q1
 U 1 1 5B5F7A75
@@ -765,32 +765,10 @@ Text Notes 8100 4050 0    50   ~ 0
 D4 A2 TOUCH
 Text Notes 8100 4150 0    50   ~ 0
 D2 A3 TOUCH
-$Comp
-L appli_link:SOLDER-LINK-2 SL1
-U 1 1 5BE6C58F
-P 2100 4700
-F 0 "SL1" H 2100 4872 40  0000 C CNN
-F 1 "SOLDER-LINK-2" H 2100 4796 40  0000 C CNN
-F 2 "Applidyne_Link:SJ1608-2N" V 2215 4600 20  0001 C CNN
-F 3 "DatasheetURL" V 2240 4600 20  0001 C CNN
-F 4 "Manufacturer" V 2290 4600 20  0001 C CNN "manf"
-F 5 "ManufacturerPartNo" V 2315 4600 20  0001 C CNN "manf#"
-F 6 "Supplier" V 2340 4600 20  0001 C CNN "Supplier"
-F 7 "SupplierPartNo" V 2365 4600 20  0001 C CNN "Supplier Part No"
-F 8 "SupplierURL" V 2390 4600 20  0001 C CNN "Supplier URL"
-F 9 "0" V 2415 4600 20  0001 C CNN "Supplier Price"
-F 10 "1" V 2440 4600 20  0001 C CNN "Supplier Price Break"
-	1    2100 4700
-	1    0    0    -1  
-$EndComp
 Text GLabel 2250 5300 2    59   Output ~ 0
 USER_BUTTON
-Text GLabel 1650 4700 0    59   Output ~ 0
-USER_BUTTON
-Wire Wire Line
-	1950 4700 1650 4700
 Text Notes 1250 4450 0    50   ~ 0
-Close the link to use the user button\nas the reset button.
+Close the link to reset.
 Wire Wire Line
 	2250 5300 2050 5300
 Text GLabel 7300 4000 2    59   Input ~ 0
@@ -869,4 +847,37 @@ NoConn ~ 5100 5800
 NoConn ~ 5100 5700
 NoConn ~ 5100 5600
 NoConn ~ 5100 5500
+$Comp
+L appli_link:SOLDER-LINK-2-TINY SL1
+U 1 1 5BE6F41F
+P 1600 4700
+F 0 "SL1" H 1600 4872 40  0000 C CNN
+F 1 "SOLDER-LINK-2-TINY" H 1600 4796 40  0000 C CNN
+F 2 "Applidyne_Link:SJ1005-2N" V 1715 4600 20  0001 C CNN
+F 3 "DatasheetURL" V 1740 4600 20  0001 C CNN
+F 4 "Manufacturer" V 1790 4600 20  0001 C CNN "manf"
+F 5 "ManufacturerPartNo" V 1815 4600 20  0001 C CNN "manf#"
+F 6 "Supplier" V 1840 4600 20  0001 C CNN "Supplier"
+F 7 "SupplierPartNo" V 1865 4600 20  0001 C CNN "Supplier Part No"
+F 8 "SupplierURL" V 1890 4600 20  0001 C CNN "Supplier URL"
+F 9 "0" V 1915 4600 20  0001 C CNN "Supplier Price"
+F 10 "1" V 1940 4600 20  0001 C CNN "Supplier Price Break"
+	1    1600 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 4700 1075 4825
+$Comp
+L appli_power:GND #PWR?
+U 1 1 5BE70759
+P 1075 4825
+F 0 "#PWR?" H 1075 4575 50  0001 C CNN
+F 1 "GND" H 1080 4652 50  0000 C CNN
+F 2 "" H 1075 4825 60  0000 C CNN
+F 3 "" H 1075 4825 60  0000 C CNN
+	1    1075 4825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1075 4700 1450 4700
 $EndSCHEMATC
