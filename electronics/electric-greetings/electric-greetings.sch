@@ -247,19 +247,19 @@ Wire Wire Line
 $Comp
 L appli_switch:B3U-1000P_SPST-NO_SMD SW1
 U 1 1 5B63789F
-P 1850 5150
-F 0 "SW1" H 1875 5392 50  0000 C CNN
-F 1 "B3U-1000P_SPST-NO_SMD" H 1875 5301 50  0000 C CNN
-F 2 "Applidyne_Switch:B3U-1000P" H 1850 4910 20  0001 C CNN
-F 3 "http://www.farnell.com/cad/1520836.pdf" H 1850 4885 20  0001 C CNN
-F 4 "OMRON" H 1850 4835 20  0001 C CNN "manf"
-F 5 "B3U-1000P" H 1850 4810 20  0001 C CNN "manf#"
-F 6 "Element 14" H 1850 4785 20  0001 C CNN "Supplier"
-F 7 "1333652" H 1850 4760 20  0001 C CNN "Supplier Part No"
-F 8 "http://au.element14.com/omron-electronic-components/b3u-1000p/switch-spst-no-0-05a-12v-smd/dp/1333652" H 1850 4735 20  0001 C CNN "Supplier URL"
-F 9 "0.546" H 1850 4710 20  0001 C CNN "Supplier Price"
-F 10 "5" H 1850 4685 20  0001 C CNN "Supplier Price Break"
-	1    1850 5150
+P 1600 5300
+F 0 "SW1" H 1625 5542 50  0000 C CNN
+F 1 "B3U-1000P_SPST-NO_SMD" H 1625 5451 50  0000 C CNN
+F 2 "Applidyne_Switch:B3U-1000P" H 1600 5060 20  0001 C CNN
+F 3 "http://www.farnell.com/cad/1520836.pdf" H 1600 5035 20  0001 C CNN
+F 4 "OMRON" H 1600 4985 20  0001 C CNN "manf"
+F 5 "B3U-1000P" H 1600 4960 20  0001 C CNN "manf#"
+F 6 "Element 14" H 1600 4935 20  0001 C CNN "Supplier"
+F 7 "1333652" H 1600 4910 20  0001 C CNN "Supplier Part No"
+F 8 "http://au.element14.com/omron-electronic-components/b3u-1000p/switch-spst-no-0-05a-12v-smd/dp/1333652" H 1600 4885 20  0001 C CNN "Supplier URL"
+F 9 "0.546" H 1600 4860 20  0001 C CNN "Supplier Price"
+F 10 "5" H 1600 4835 20  0001 C CNN "Supplier Price Break"
+	1    1600 5300
 	1    0    0    -1  
 $EndComp
 Text GLabel 2500 1950 2    51   BiDi ~ 0
@@ -371,54 +371,54 @@ Design borrows heavily from Adafruit Trinket M0 design.\nKey changes are PCB USB
 $Comp
 L appli_test_points:PROBE_PAD TEST1
 U 1 1 5B63FE1E
-P 1450 3650
-F 0 "TEST1" H 1450 3550 60  0001 C CNN
-F 1 "PROBE_PAD" H 1490 3772 60  0000 L CNN
-F 2 "Applidyne_Test:TP200" H 1350 3450 60  0001 C CNN
-F 3 "" H 1450 3550 60  0000 C CNN
-F 4 "N/A" H 1450 3100 60  0001 C CNN "manf"
-F 5 "N/A" H 1450 3000 60  0001 C CNN "manf#"
-F 6 "N/A" H 1450 2900 60  0001 C CNN "Supplier"
-F 7 "#" H 1450 2800 60  0001 C CNN "Supplier URL"
-F 8 "0" H 1450 3200 60  0001 C CNN "Supplier Price"
-F 9 "0" H 1450 3300 60  0001 C CNN "Supplier Price Break"
-F 10 "DNP" H 1490 3666 60  0000 L CNN "Installed"
-	1    1450 3650
+P 1450 3400
+F 0 "TEST1" H 1450 3300 60  0001 C CNN
+F 1 "PROBE_PAD" H 1490 3522 60  0000 L CNN
+F 2 "Applidyne_Test:TP200" H 1350 3200 60  0001 C CNN
+F 3 "" H 1450 3300 60  0000 C CNN
+F 4 "N/A" H 1450 2850 60  0001 C CNN "manf"
+F 5 "N/A" H 1450 2750 60  0001 C CNN "manf#"
+F 6 "N/A" H 1450 2650 60  0001 C CNN "Supplier"
+F 7 "#" H 1450 2550 60  0001 C CNN "Supplier URL"
+F 8 "0" H 1450 2950 60  0001 C CNN "Supplier Price"
+F 9 "0" H 1450 3050 60  0001 C CNN "Supplier Price Break"
+F 10 "DNP" H 1490 3416 60  0000 L CNN "Installed"
+	1    1450 3400
 	1    0    0    -1  
 $EndComp
-Text GLabel 1800 3700 2    51   BiDi ~ 0
+Text GLabel 1800 3450 2    51   BiDi ~ 0
 SWD_CLK
 Wire Wire Line
-	1800 3700 1450 3700
+	1800 3450 1450 3450
 Wire Wire Line
-	1450 3700 1450 3650
+	1450 3450 1450 3400
 $Comp
 L appli_test_points:PROBE_PAD TEST2
 U 1 1 5B644BC6
-P 1450 4000
-F 0 "TEST2" H 1450 3900 60  0001 C CNN
-F 1 "PROBE_PAD" H 1490 4122 60  0000 L CNN
-F 2 "Applidyne_Test:TP200" H 1350 3800 60  0001 C CNN
-F 3 "" H 1450 3900 60  0000 C CNN
-F 4 "N/A" H 1450 3450 60  0001 C CNN "manf"
-F 5 "N/A" H 1450 3350 60  0001 C CNN "manf#"
-F 6 "N/A" H 1450 3250 60  0001 C CNN "Supplier"
-F 7 "#" H 1450 3150 60  0001 C CNN "Supplier URL"
-F 8 "0" H 1450 3550 60  0001 C CNN "Supplier Price"
-F 9 "0" H 1450 3650 60  0001 C CNN "Supplier Price Break"
-F 10 "DNP" H 1490 4016 60  0000 L CNN "Installed"
-	1    1450 4000
+P 1450 3750
+F 0 "TEST2" H 1450 3650 60  0001 C CNN
+F 1 "PROBE_PAD" H 1490 3872 60  0000 L CNN
+F 2 "Applidyne_Test:TP200" H 1350 3550 60  0001 C CNN
+F 3 "" H 1450 3650 60  0000 C CNN
+F 4 "N/A" H 1450 3200 60  0001 C CNN "manf"
+F 5 "N/A" H 1450 3100 60  0001 C CNN "manf#"
+F 6 "N/A" H 1450 3000 60  0001 C CNN "Supplier"
+F 7 "#" H 1450 2900 60  0001 C CNN "Supplier URL"
+F 8 "0" H 1450 3300 60  0001 C CNN "Supplier Price"
+F 9 "0" H 1450 3400 60  0001 C CNN "Supplier Price Break"
+F 10 "DNP" H 1490 3766 60  0000 L CNN "Installed"
+	1    1450 3750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1800 4050 2    51   BiDi ~ 0
+Text GLabel 1800 3800 2    51   BiDi ~ 0
 SWD_IO
 Wire Wire Line
-	1800 4050 1450 4050
+	1800 3800 1450 3800
 Wire Wire Line
-	1450 4050 1450 4000
-Text Notes 1375 3225 0    79   ~ 16
+	1450 3800 1450 3750
+Text Notes 1375 2975 0    79   ~ 16
 SWD Programming
-Text Notes 1575 4675 0    79   ~ 16
+Text Notes 1525 4225 0    79   ~ 16
 Reset Button
 Text Notes 9950 1150 0    79   ~ 16
 Status LED
@@ -454,7 +454,7 @@ Text GLabel 4900 5100 0    59   Output ~ 0
 LED_CLK
 Text GLabel 4350 3900 0    59   Input ~ 0
 RESET
-Text GLabel 2575 5150 2    59   Output ~ 0
+Text GLabel 2525 4700 2    59   Output ~ 0
 RESET
 $Comp
 L appli_power:+3.3V #PWR03
@@ -516,7 +516,7 @@ Text Notes 9625 3525 0    59   ~ 0
 Used as rough rangefinder,\ncolour sensor or pulse-monitor
 Text GLabel 10400 4350 2    59   Output ~ 0
 PHOTOSENSOR
-Text GLabel 7300 4000 2    59   Input ~ 0
+Text GLabel 4900 5200 0    59   Input ~ 0
 PHOTOSENSOR
 Text Notes 5100 3225 0    79   ~ 16
 Atmel ARM M0 Microcontroller
@@ -545,30 +545,30 @@ $EndComp
 $Comp
 L appli_logo:LOGO LOGO1
 U 1 1 5B655C8C
-P 1475 6225
-F 0 "LOGO1" H 1653 6225 47  0000 L CNN
-F 1 "LOGO" H 1475 5950 47  0001 C CNN
-F 2 "Applidyne_Logo:EUI_LOGO_1000X940_MASK" H 1475 6025 47  0001 C CNN
-F 3 "" H 1475 6225 60  0000 C CNN
-	1    1475 6225
+P 1475 6325
+F 0 "LOGO1" H 1653 6325 47  0000 L CNN
+F 1 "LOGO" H 1475 6050 47  0001 C CNN
+F 2 "Applidyne_Logo:EUI_LOGO_1000X940_MASK" H 1475 6125 47  0001 C CNN
+F 3 "" H 1475 6325 60  0000 C CNN
+	1    1475 6325
 	1    0    0    -1  
 $EndComp
-Text Notes 1350 5900 0    79   ~ 16
+Text Notes 1350 6000 0    79   ~ 16
 Logos and Cosmetics
-Text Notes 2000 6250 0    59   ~ 0
+Text Notes 2000 6350 0    59   ~ 0
 ElectricUI Crest
 $Comp
 L appli_logo:LOGO LOGO4
 U 1 1 5B657FD7
-P 1475 6625
-F 0 "LOGO4" H 1653 6625 47  0000 L CNN
-F 1 "LOGO" H 1475 6350 47  0001 C CNN
-F 2 "Applidyne_Logo:USB_LOGO410X250" H 1475 6425 47  0001 C CNN
-F 3 "" H 1475 6625 60  0000 C CNN
-	1    1475 6625
+P 1475 6725
+F 0 "LOGO4" H 1653 6725 47  0000 L CNN
+F 1 "LOGO" H 1475 6450 47  0001 C CNN
+F 2 "Applidyne_Logo:USB_LOGO410X250" H 1475 6525 47  0001 C CNN
+F 3 "" H 1475 6725 60  0000 C CNN
+	1    1475 6725
 	1    0    0    -1  
 $EndComp
-Text Notes 2050 6650 0    59   ~ 0
+Text Notes 2050 6750 0    59   ~ 0
 USB Symbol
 $Comp
 L appli_atmel:ATSAMD21E18A U1
@@ -691,27 +691,25 @@ Text Notes 5650 4800 0    50   ~ 0
 Digital
 Text Notes 7150 5600 0    50   ~ 0
 Chip has internal series resistors and \ninternal tranciever pull-resistors
-Text GLabel 7300 4100 2    59   Input ~ 0
-CURRENT
-Text Notes 9500 6150 0    50   ~ 0
+Text Notes 5200 6350 0    50   ~ 0
 Relevant features:\n- Internal 128-bit serial number.\n- Internal temperature sensor.
 Wire Wire Line
-	1450 5150 1325 5150
+	1200 5300 1075 5300
 Wire Wire Line
-	1325 5150 1325 5375
+	1075 5300 1075 5375
 $Comp
 L appli_power:GND #PWR0101
 U 1 1 5B5F11E0
-P 1325 5375
-F 0 "#PWR0101" H 1325 5125 50  0001 C CNN
-F 1 "GND" H 1330 5202 50  0000 C CNN
-F 2 "" H 1325 5375 60  0000 C CNN
-F 3 "" H 1325 5375 60  0000 C CNN
-	1    1325 5375
+P 1075 5375
+F 0 "#PWR0101" H 1075 5125 50  0001 C CNN
+F 1 "GND" H 1080 5202 50  0000 C CNN
+F 2 "" H 1075 5375 60  0000 C CNN
+F 3 "" H 1075 5375 60  0000 C CNN
+	1    1075 5375
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2300 5150 2575 5150
+	2250 4700 2525 4700
 $Comp
 L appli_transistor:ALS-PT19-315C Q1
 U 1 1 5B5F7A75
@@ -763,8 +761,112 @@ Wire Wire Line
 	7300 4000 7100 4000
 Wire Wire Line
 	7300 4100 7100 4100
-Text Notes 8125 4025 0    50   ~ 0
-A2
-Text Notes 8125 4125 0    50   ~ 0
-A3
+Text Notes 8100 4050 0    50   ~ 0
+D4 A2 TOUCH
+Text Notes 8100 4150 0    50   ~ 0
+D2 A3 TOUCH
+$Comp
+L appli_link:SOLDER-LINK-2 SL1
+U 1 1 5BE6C58F
+P 2100 4700
+F 0 "SL1" H 2100 4872 40  0000 C CNN
+F 1 "SOLDER-LINK-2" H 2100 4796 40  0000 C CNN
+F 2 "Applidyne_Link:SJ1608-2N" V 2215 4600 20  0001 C CNN
+F 3 "DatasheetURL" V 2240 4600 20  0001 C CNN
+F 4 "Manufacturer" V 2290 4600 20  0001 C CNN "manf"
+F 5 "ManufacturerPartNo" V 2315 4600 20  0001 C CNN "manf#"
+F 6 "Supplier" V 2340 4600 20  0001 C CNN "Supplier"
+F 7 "SupplierPartNo" V 2365 4600 20  0001 C CNN "Supplier Part No"
+F 8 "SupplierURL" V 2390 4600 20  0001 C CNN "Supplier URL"
+F 9 "0" V 2415 4600 20  0001 C CNN "Supplier Price"
+F 10 "1" V 2440 4600 20  0001 C CNN "Supplier Price Break"
+	1    2100 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 5300 2    59   Output ~ 0
+USER_BUTTON
+Text GLabel 1650 4700 0    59   Output ~ 0
+USER_BUTTON
+Wire Wire Line
+	1950 4700 1650 4700
+Text Notes 1250 4450 0    50   ~ 0
+Close the link to use the user button\nas the reset button.
+Wire Wire Line
+	2250 5300 2050 5300
+Text GLabel 7300 4000 2    59   Input ~ 0
+USER_BUTTON
+Text Notes 3950 5200 0    50   ~ 0
+D0 A4
+Text Notes 3950 5300 0    50   ~ 0
+D2 A1
+Text Notes 3950 5450 0    50   ~ 0
+D13
+Text Notes 8100 3600 0    50   ~ 0
+D1 A0 DAC, TOUCH
+Text Notes 3950 5100 0    50   ~ 0
+D7\nD8
+Wire Wire Line
+	7100 3600 7300 3600
+Text GLabel 7300 3600 2    50   BiDi ~ 0
+TOUCH_A
+Wire Wire Line
+	4900 5200 5100 5200
+Text GLabel 7300 4100 2    50   BiDi ~ 0
+TOUCH_B
+Text GLabel 9750 6050 0    50   BiDi ~ 0
+TOUCH_B
+Text GLabel 9750 5750 0    50   BiDi ~ 0
+TOUCH_A
+$Comp
+L appli_connector:PAD_SOLDER_2mm P1
+U 1 1 5BE73C9A
+P 10250 5750
+F 0 "P1" H 10327 5791 50  0000 L CNN
+F 1 "PAD_SOLDER_2mm" H 10327 5700 50  0000 L CNN
+F 2 "Applidyne_Connector:PAD_SOLDER_2mm" H 10250 5535 50  0001 C CNN
+F 3 "" H 10250 5450 50  0001 C CNN
+F 4 "DIY" H 10250 5400 60  0001 C CNN "manf"
+F 5 "No part" H 10250 5350 60  0001 C CNN "Supplier"
+F 6 "0.0" H 10250 5250 60  0001 C CNN "Supplier Price"
+F 7 "1" H 10250 5150 60  0001 C CNN "Supplier Price Break"
+	1    10250 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L appli_connector:PAD_SOLDER_2mm P2
+U 1 1 5BE73F50
+P 10250 6050
+F 0 "P2" H 10327 6091 50  0000 L CNN
+F 1 "PAD_SOLDER_2mm" H 10327 6000 50  0000 L CNN
+F 2 "Applidyne_Connector:PAD_SOLDER_2mm" H 10250 5835 50  0001 C CNN
+F 3 "" H 10250 5750 50  0001 C CNN
+F 4 "DIY" H 10250 5700 60  0001 C CNN "manf"
+F 5 "No part" H 10250 5650 60  0001 C CNN "Supplier"
+F 6 "0.0" H 10250 5550 60  0001 C CNN "Supplier Price"
+F 7 "1" H 10250 5450 60  0001 C CNN "Supplier Price Break"
+	1    10250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 6050 10050 6050
+Wire Wire Line
+	10050 5750 9750 5750
+Text Notes 9750 5350 0    79   ~ 16
+Capacitive Sensing
+Text Notes 9550 5600 0    59   ~ 0
+Uses self-capacitance feature\nto provide two edge buttons
+NoConn ~ 7100 3700
+NoConn ~ 7100 3800
+NoConn ~ 7100 3900
+NoConn ~ 6400 5800
+NoConn ~ 6400 5700
+NoConn ~ 6400 5400
+NoConn ~ 6400 5300
+NoConn ~ 6400 5200
+NoConn ~ 6400 5100
+NoConn ~ 6400 5000
+NoConn ~ 5100 5800
+NoConn ~ 5100 5700
+NoConn ~ 5100 5600
+NoConn ~ 5100 5500
 $EndSCHEMATC
