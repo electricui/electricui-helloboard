@@ -15,13 +15,13 @@ Comment3 "Scott Rapson"
 Comment4 ""
 $EndDescr
 $Comp
-L appli_usb:USB_A_MALE_PCB J?1
+L appli_usb:USB_A_MALE_PCB J1
 U 1 1 5B634FDE
 P 1450 1900
-F 0 "J?1" H 1350 2437 60  0000 C CNN
+F 0 "J1" H 1350 2437 60  0000 C CNN
 F 1 "USB_A_MALE_PCB" H 1350 2331 60  0000 C CNN
 F 2 "Applidyne_USB:USB_A_PLUG_PCB" V 1850 1900 60  0001 C CNN
-F 3 "http://www.molex.com/molex/products/datasheet.jsp?part=active/0482580001_IO_CONNECTORS.xml&channel=Products&Lang=en-US" V 1800 1900 20  0001 C CNN
+F 3 "" V 1800 1900 20  0001 C CNN
 	1    1450 1900
 	-1   0    0    -1  
 $EndComp
@@ -291,7 +291,7 @@ F 2 "Applidyne_LED:AP102_200X200X90L" H 8495 1010 50  0001 C CNN
 F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 8500 390 50  0001 C CNN
 F 4 "DotStar" H 8500 1255 60  0001 C CNN "manf"
 F 5 "APA102–2020" H 8485 1090 60  0001 C CNN "manf#"
-F 6 "$5.95" H 8500 600 60  0001 C CNN "Supplier Price"
+F 6 "5.95" H 8500 600 60  0001 C CNN "Supplier Price"
 F 7 "Adafruit" H 8600 700 60  0001 C CNN "Supplier"
 F 8 "https://www.adafruit.com/product/3341" H 8700 800 60  0001 C CNN "Supplier URL"
 F 9 "3341" H 8500 900 60  0001 C CNN "Supplier Part No"
@@ -379,7 +379,7 @@ F 3 "" H 1450 3300 60  0000 C CNN
 F 4 "N/A" H 1450 2850 60  0001 C CNN "manf"
 F 5 "N/A" H 1450 2750 60  0001 C CNN "manf#"
 F 6 "N/A" H 1450 2650 60  0001 C CNN "Supplier"
-F 7 "#" H 1450 2550 60  0001 C CNN "Supplier URL"
+F 7 "" H 1450 2550 60  0001 C CNN "Supplier URL"
 F 8 "0" H 1450 2950 60  0001 C CNN "Supplier Price"
 F 9 "0" H 1450 3050 60  0001 C CNN "Supplier Price Break"
 F 10 "DNP" H 1490 3416 60  0000 L CNN "Installed"
@@ -403,7 +403,7 @@ F 3 "" H 1450 3650 60  0000 C CNN
 F 4 "N/A" H 1450 3200 60  0001 C CNN "manf"
 F 5 "N/A" H 1450 3100 60  0001 C CNN "manf#"
 F 6 "N/A" H 1450 3000 60  0001 C CNN "Supplier"
-F 7 "#" H 1450 2900 60  0001 C CNN "Supplier URL"
+F 7 "" H 1450 2900 60  0001 C CNN "Supplier URL"
 F 8 "0" H 1450 3300 60  0001 C CNN "Supplier Price"
 F 9 "0" H 1450 3400 60  0001 C CNN "Supplier Price Break"
 F 10 "DNP" H 1490 3766 60  0000 L CNN "Installed"
@@ -841,12 +841,12 @@ P 1600 4700
 F 0 "SL1" H 1600 4872 40  0000 C CNN
 F 1 "SOLDER-LINK-2-TINY" H 1600 4796 40  0000 C CNN
 F 2 "Applidyne_Link:SJ1005-2N" V 1715 4600 20  0001 C CNN
-F 3 "DatasheetURL" V 1740 4600 20  0001 C CNN
-F 4 "Manufacturer" V 1790 4600 20  0001 C CNN "manf"
-F 5 "ManufacturerPartNo" V 1815 4600 20  0001 C CNN "manf#"
+F 3 "" V 1740 4600 20  0001 C CNN
+F 4 "" V 1790 4600 20  0001 C CNN "manf"
+F 5 "" V 1815 4600 20  0001 C CNN "manf#"
 F 6 "Supplier" V 1840 4600 20  0001 C CNN "Supplier"
 F 7 "SupplierPartNo" V 1865 4600 20  0001 C CNN "Supplier Part No"
-F 8 "SupplierURL" V 1890 4600 20  0001 C CNN "Supplier URL"
+F 8 "" V 1890 4600 20  0001 C CNN "Supplier URL"
 F 9 "0" V 1915 4600 20  0001 C CNN "Supplier Price"
 F 10 "1" V 1940 4600 20  0001 C CNN "Supplier Price Break"
 	1    1600 4700
