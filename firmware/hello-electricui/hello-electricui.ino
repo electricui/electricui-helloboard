@@ -17,13 +17,15 @@
 Adafruit_DotStar strip = Adafruit_DotStar(  NUM_PIXELS, 
                                             PIN_RGB_DATA, 
                                             PIN_RGB_CLOCK, 
-                                            DOTSTAR_BRG );
+                                            DOTSTAR_BGR );
 
 typedef struct rgb_t {
-  uint16_t r;
-  uint16_t g;
-  uint16_t b;
+  uint8_t r;
+  uint8_t g;
+  uint8_t b;
 };
+
+uint8_t filter_strength = 10;
 
 // Inputs
 uint16_t light_adc      = 0;
@@ -45,9 +47,14 @@ eui_message_t tracked_variables[] = {
   EUI_UINT16_RO(  "tB",    touch_b_adc    ),
   EUI_UINT8_RO(   "but",   button_pressed ),
 
+  EUI_UINT8(  "r",    dotstar.r    ),
+  EUI_UINT8(  "g",    dotstar.g    ),
+  EUI_UINT8(  "b",    dotstar.b    ),
+
+
+  EUI_UINT8( "filter", filter_strength ),
   EUI_UINT8(    "led", status_led ),
   EUI_CUSTOM(   "rgb", dotstar    ),
-
 
   EUI_CHAR_ARRAY( "name", device_nickname ),
 };
@@ -67,7 +74,7 @@ void setup_pins()
 
 void setup()
 {
-  Serial.begin(115200); //it's actually USB therefore baud doesn't matter
+  Serial.begin( 115200 ); //it's actually USB so baud doesn't matter
   setup_pins();
   
   usb_cdc.output_func = &usb_write;
@@ -83,25 +90,37 @@ void setup()
 
 void loop()
 {
-  while( Serial.available() > 0 )  
+  while( Serial.available() > 0 )  // Process inbound serial data
   {  
     parse_packet( Serial.read(), &usb_cdc );
   }
 
   // Sample inputs
-  light_adc   = analogRead( PIN_PHOTOSENSE );
   touch_a_adc = analogRead( PIN_TOUCH_A );
   touch_b_adc = analogRead( PIN_TOUCH_B );
   button_pressed = !digitalRead( PIN_BUTTON );
 
+  uint16_t raw_light = analogRead( PIN_PHOTOSENSE );
+  light_adc = exponential_moving_average( light_adc, raw_light, filter_strength );
+
   // Control the status LED  
-  analogWrite( PIN_STATUS, status_led );
+  digitalWrite( PIN_STATUS, status_led );
 
   //control the RGB led
   strip.setPixelColor( 0, dotstar.r, dotstar.g, dotstar.b );
   strip.show(); 
   
   delay(1);
+}
+
+uint16_t exponential_moving_average( uint16_t average, uint16_t input, uint8_t alpha )
+{
+  if(!alpha)
+  {
+    alpha = 1;  //0 values will cause divide by 0 errors
+  }
+
+  return (average * (alpha-1) + input) / alpha; // running average
 }
 
 uint32_t * get_chip_uuid() 
@@ -115,6 +134,7 @@ uint32_t * get_chip_uuid()
   return uuid;
 }
 
+// Output function is called by Electric UI
 void usb_write( uint8_t *data, uint16_t length )
 {
   Serial.write( data, length );
