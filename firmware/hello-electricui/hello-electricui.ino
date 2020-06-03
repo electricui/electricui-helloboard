@@ -77,12 +77,12 @@ void setup()
   Serial.begin( 115200 ); //it's actually USB so baud doesn't matter
   setup_pins();
   
-  usb_cdc.output_func = &usb_write;
-  setup_interface( &usb_cdc );
+  usb_cdc.output_cb = &usb_write;
+  eui_setup_interface( &usb_cdc );
   EUI_TRACK( tracked_variables );
 
   uint32_t * uuid_buf = get_chip_uuid();  //128-bit UUID
-  setup_identifier( (char*)uuid_buf, 16 );
+  eui_setup_identifier( (char*)uuid_buf, 16 );
 
   strip.begin(); 
   strip.show();  // Turn all LEDs off at start
@@ -92,7 +92,7 @@ void loop()
 {
   while( Serial.available() > 0 )  // Process inbound serial data
   {  
-    parse_packet( Serial.read(), &usb_cdc );
+    eui_parse( Serial.read(), &usb_cdc );
   }
 
   // Sample inputs
